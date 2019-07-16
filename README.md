@@ -1,35 +1,42 @@
-# Search-bar
-[![CircleCI](https://circleci.com/gh/pxblue/search-bar/tree/angular.svg?style=shield)](https://circleci.com/gh/pxblue/search-bar/tree/angular)
+# Power Xpert Blue Development Challenge
 
+##### Author : ChihYing Chang (Jill)
+##### Date: Jul-16-2019
 
-This is a sample application showing how to build a basic Search-bar. At the top of the page, the app bar has a search icon on the right. After clicking on the search icon, the search bar slides in from the right of the app bar.
+## 0. How to run the application
 
-## Running the example
-To run this example, first clone the repository. Each of our example projects comes with a branch for Angular and a branch for React. You can choose which branch to use when you clone the repository (or you can switch after cloning as well):
+Before running the application, please make sure you have Angular(7.3.9 or above) and Node(10.16.0) installed.
 
-```
-git clone https://github.com/pxblue/search-bar -b angular
-git clone https://github.com/pxblue/search-bar -b react
-```
-
-Navigate to the project directory and install the necessary dependencies (note: our projects are set up to be run with yarn):
+Navigate to the project directory and install the necessary dependencies (note: the project is set up to be run with yarn):
 
 ```
-cd search-bar
+cd Eaton
 yarn
 ```
 
-You can then run the example - this will launch the application in your browser:
+You can then run the project - this will launch the application in your browser:
 ```
 yarn start
 ```
 
-All of our code examples can also be found on [Stackblitz](http://www.stackblitz.com/@px-blue), which allows you to make changes to a project and see the updates to the rendered application in real-time.
-- [Angular](https://stackblitz.com/edit/pxblue-search-bar-angular)
-- [React](https://stackblitz.com/edit/pxblue-search-bar-react)
+## 1. Task:
 
-## Referance 
-1. 
+The Power Xpert Blue documentation site (pxblue.github.io) includes information about PX Blue and how to use it to build applications. This includes a resources page (pxblue.github.io/resources), which lists all of the materials that are available as part of PX Blue, including various NPM packages and code examples.
+
+## 2. User Interface:
+
+
+
+## 3. Milestones:
+
+## 4. Technology Stack:
+
+## 5. Referance 
+1. pxblue Side Navigation
+https://github.com/pxblue/side-navigation
+2. pxblue Search bar
+https://github.com/pxblue/search-bar
+3. 
 https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/
-2. 
+4. 
 https://stackoverflow.com/questions/45940965/angular-material-customize-tab
