@@ -1,0 +1,18 @@
+export let design_pattern_list = [
+    {'Repository': 'action-list', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'bottomsheet', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'collapsible', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'complex-bottomsheet', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'data-list', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'dynamic-stepper', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'form-validation', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'icon-navigation', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'internationalization', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'login', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'multiselect-list', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'responsive-table', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'search-bar', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'side-navigation', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'sortable-list', 'Status': '', 'Updated': '', 'Issues': ''},
+    {'Repository': 'status-list', 'Status': '', 'Updated': '', 'Issues': ''},
+]
