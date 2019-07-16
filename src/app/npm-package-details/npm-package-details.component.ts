@@ -3,12 +3,12 @@ import { NavigationService } from '../shared/navigation.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-design-pattern-details',
-  templateUrl: './design-pattern-details.component.html',
-  styleUrls: ['./design-pattern-details.component.css'],
+  selector: 'app-npm-package-details',
+  templateUrl: './npm-package-details.component.html',
+  styleUrls: ['./npm-package-details.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class DesignPatternDetailsComponent implements OnInit {
+export class NpmPackageDetailsComponent implements OnInit {
   item: any;
   title = '';
 
@@ -23,9 +23,11 @@ export class DesignPatternDetailsComponent implements OnInit {
   });
   }
 
+  ngOnInit() {
+  }
+
   onMenuClicked() {
     this._navigationService.toggleMenu();
   }
-  ngOnInit() {
-  }
+
 }

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ComingSoonComponent } from './comingsoon/comingsoon.component';
 import { OverviewComponent } from './overview/overview.component';
 import { NpmPackagesComponent } from './npm-packages/npm-packages.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
 import { DesignPatternDetailsComponent } from './design-pattern-details/design-pattern-details.component';
+import { NpmPackageDetailsComponent } from './npm-package-details/npm-package-details.component';
 
 export const routes: Routes = [
   {
@@ -31,6 +31,10 @@ export const routes: Routes = [
   {
     path: 'DesignPatternDetail',
     component: DesignPatternDetailsComponent,
+  },
+  {
+    path: 'NPMPackageDetail',
+    component: NpmPackageDetailsComponent,
   },
 ];
 

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { NavigationService } from '../shared/navigation.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 import { npm_package_list } from '../shared/npm-package-list';
 
 @Component({
@@ -17,7 +17,10 @@ export class NpmPackagesComponent implements OnInit {
 
   toggleSearch = false;
 
-  constructor(private _navigationService: NavigationService, private route: ActivatedRoute) { }
+  constructor(private _navigationService: NavigationService, 
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
   onMenuClicked() {
     this._navigationService.toggleMenu();
   }
@@ -35,6 +38,13 @@ export class NpmPackagesComponent implements OnInit {
   onSelected(item: any) {
     console.log(item);
     this.item = item;
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+          "title": item.Repository,
+          "item":JSON.stringify(item)
+      }
+    };
+    this.router.navigate(["NPMPackageDetail"], navigationExtras);
   }
   isSelected(item: any) {
     return this.item === item;

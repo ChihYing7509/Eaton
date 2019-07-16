@@ -21,6 +21,7 @@ import { NpmPackagesComponent } from './npm-packages/npm-packages.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
 import { FilterPipe} from './shared/filter.pipe';
 import { DesignPatternDetailsComponent } from './design-pattern-details/design-pattern-details.component';
+import { NpmPackageDetailsComponent } from './npm-package-details/npm-package-details.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DesignPatternDetailsComponent } from './design-pattern-details/design-p
     DesignPatternsComponent,
     FilterPipe,
     DesignPatternDetailsComponent,
+    NpmPackageDetailsComponent,
   ],
   imports: [
     AppRoutingModule,
