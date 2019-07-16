@@ -36,7 +36,5 @@ The Power Xpert Blue documentation site (pxblue.github.io) includes information 
 https://github.com/pxblue/side-navigation
 2. pxblue Search bar
 https://github.com/pxblue/search-bar
-3. 
-https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/
-4. 
-https://stackoverflow.com/questions/45940965/angular-material-customize-tab
+3. https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/
+4. https://stackoverflow.com/questions/45940965/angular-material-customize-tab
