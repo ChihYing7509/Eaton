@@ -1,0 +1,48 @@
+
+    <mat-toolbar color="primary" class="example-toolbar">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClicked()" style="margin-left:-4px; margin-right: 12px">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <h6 class="example-app-name">{{title}}</h6>
+      </mat-toolbar>
+
+
+      <mat-card class="container">
+          <mat-card-content>
+              <h1>
+                  Power Xpert Blue Resources
+              </h1>
+              <p>Power Xpert Blue offers a number of resources for developers, available through
+                  <a href="https://www.npmjs.com/org/pxblue" target="_blank" rel="noopener noreferrer">
+                    NPM</a>
+                     and
+                  <a href="https://github.com/pxblue" target="_blank" rel="noopener noreferrer">
+                    Github</a>
+                    . These include utility packages as well as sample code/design pattern examples.
+                </p>
+          </mat-card-content>
+          <mat-card-content>
+              <h2>NPM Packages</h2>
+              <p>The
+                <a [routerLinkActive]="['primaryLink']" routerLink="/NPMpackages">NPM Packages</a>
+                page shows the current status for PX Blue resources available through NPM.
+              </p>
+          </mat-card-content>
+          <mat-card-content>
+              <h2>Design Patterns / Examples</h2>
+              <p>The
+                <a [routerLinkActive]="['primaryLink']" routerLink="/DesignPatterns">Design Patterns / Examples</a>
+                page shows the current status of the PX Blue design pattern code samples available from GitHub and
+                <a href="https://stackblitz.com/@px-blue" target="_blank" rel="noopener noreferrer">
+                  StackBlitz</a>.
+              </p>
+          </mat-card-content>
+      </mat-card>
+
+
+
+
+
+
+
+

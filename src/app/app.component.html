@@ -1,0 +1,48 @@
+
+<mat-sidenav-container class="app-container" (backdropClick)="open = false">
+    <mat-sidenav #snav mode="over" class="sidenav" [opened]="open">
+       <mat-nav-list fxLayout="column" fxFlexFill style="padding-top:0; overflow-x:hidden">
+        <!-- Mobile Toolbar -->
+        <mat-toolbar style="background-color:#007bc1; color:white; min-height:150px;">
+          <mat-toolbar-row style="height:72px; margin-left: 10px; margin-bottom: 42px;">
+            <mat-icon style="font-size:64px; transform:rotate(42deg);">offline_bolt</mat-icon>
+          </mat-toolbar-row>
+          <mat-toolbar-row style="height:6px;">
+            Power Xpert Blue
+          </mat-toolbar-row>
+          <mat-toolbar-row >
+            <small>A Design System for Eaton Applications</small>
+          </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-divider></mat-divider>
+        <div class="navWrapper">
+          <section fxLayout="column">
+            <h3 matSubheader style="margin-top: 0">Resources</h3>
+            <mat-divider></mat-divider>
+            <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/Overview" (click)="closeNav()">
+              <!-- <mat-icon matListIcon class="nav-icon">move_to_inbox</mat-icon> -->
+              Overview
+            </a>
+            <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/NPMpackages" (click)="closeNav()">
+              <!-- <mat-icon matListIcon class="nav-icon">move_to_inbox</mat-icon> -->
+              NPM Packages
+            </a>
+            <a mat-list-item [routerLinkActive]="['primaryLink']" routerLink="/DesignPatterns" (click)="closeNav()">
+              <!-- <mat-icon matListIcon class="nav-icon">send</mat-icon> -->
+              Design Patterns / Examples
+            </a>
+
+          </section>
+
+          <mat-divider></mat-divider>
+          <div fxFlex ></div>
+          <mat-divider></mat-divider>
+
+        </div>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="nav-content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
