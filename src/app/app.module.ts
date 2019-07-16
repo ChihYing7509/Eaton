@@ -10,6 +10,7 @@ import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs'
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +20,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { NpmPackagesComponent } from './npm-packages/npm-packages.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
 import { FilterPipe} from './shared/filter.pipe';
+import { DesignPatternDetailsComponent } from './design-pattern-details/design-pattern-details.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { FilterPipe} from './shared/filter.pipe';
     NpmPackagesComponent,
     DesignPatternsComponent,
     FilterPipe,
+    DesignPatternDetailsComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -40,7 +43,8 @@ import { FilterPipe} from './shared/filter.pipe';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatTabsModule,
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

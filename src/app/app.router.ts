@@ -5,6 +5,7 @@ import { ComingSoonComponent } from './comingsoon/comingsoon.component';
 import { OverviewComponent } from './overview/overview.component';
 import { NpmPackagesComponent } from './npm-packages/npm-packages.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
+import { DesignPatternDetailsComponent } from './design-pattern-details/design-pattern-details.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
     path: 'DesignPatterns',
     component: DesignPatternsComponent,
     data: {title: 'Design Patterns / Examples'}
+  },
+  {
+    path: 'DesignPatternDetail',
+    component: DesignPatternDetailsComponent,
   },
 ];
 

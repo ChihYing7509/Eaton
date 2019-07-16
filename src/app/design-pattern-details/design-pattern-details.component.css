@@ -1,0 +1,12 @@
+.details-container {
+    margin: 30px 20px;
+}
+
+.mat-tab-label{
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+.pxb-blue .mat-tab-group.mat-warn .mat-ink-bar {
+    background-color: #007bc1;
+}

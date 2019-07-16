@@ -15,4 +15,4 @@ export let design_pattern_list = [
     {'Repository': 'side-navigation', 'Status': '', 'Updated': '', 'Issues': ''},
     {'Repository': 'sortable-list', 'Status': '', 'Updated': '', 'Issues': ''},
     {'Repository': 'status-list', 'Status': '', 'Updated': '', 'Issues': ''},
-]
+];

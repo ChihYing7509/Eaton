@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="example-toolbar">
+  <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClicked()" style="margin-left:-4px; margin-right: 12px">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <h6 class="example-app-name">{{title}}</h6>
+</mat-toolbar>
+
+<div class="details-container">
+    <mat-tab-group animationDuration="0ms" color=warn>
+        <mat-tab label="Angular" >
+          <h1>Content 1</h1>
+      
+        </mat-tab>
+        <mat-tab label="React">
+            <h1>Content 2</h1>
+          </mat-tab>
+
+          <mat-tab label="Issues">
+              <h1>Content 3</h1>
+            </mat-tab>
+      </mat-tab-group>
+</div>

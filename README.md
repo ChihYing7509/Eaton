@@ -27,3 +27,9 @@ yarn start
 All of our code examples can also be found on [Stackblitz](http://www.stackblitz.com/@px-blue), which allows you to make changes to a project and see the updates to the rendered application in real-time.
 - [Angular](https://stackblitz.com/edit/pxblue-search-bar-angular)
 - [React](https://stackblitz.com/edit/pxblue-search-bar-react)
+
+## Referance 
+1. 
+https://www.thepolyglotdeveloper.com/2016/10/passing-complex-data-angular-2-router-nativescript/
+2. 
+https://stackoverflow.com/questions/45940965/angular-material-customize-tab
