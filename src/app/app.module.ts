@@ -9,19 +9,25 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppComponent } from './app.component';
-import {ComingSoonComponent} from './comingsoon/comingsoon.component';
 
 import { AppRoutingModule } from './app.router';
 import {NavigationService} from './shared/navigation.service';
 import { OverviewComponent } from './overview/overview.component';
 import { NpmPackagesComponent } from './npm-packages/npm-packages.component';
 import { DesignPatternsComponent } from './design-patterns/design-patterns.component';
+import { FilterPipe} from './shared/filter.pipe';
 
 @NgModule({
-  declarations: [AppComponent, ComingSoonComponent, OverviewComponent, NpmPackagesComponent, DesignPatternsComponent],
+  declarations: [
+    AppComponent,
+    OverviewComponent,
+    NpmPackagesComponent,
+    DesignPatternsComponent,
+    FilterPipe,
+  ],
   imports: [
     AppRoutingModule,
     BrowserAnimationsModule,

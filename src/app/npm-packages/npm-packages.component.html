@@ -1,7 +1,41 @@
-<mat-toolbar color="primary" class="example-toolbar">
-    <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClicked()" style="margin-left:-4px; margin-right: 12px">
-      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-    </button>
-    <h6 class="example-app-name">{{title}}</h6>
+<div class="eaton mat-typography container" >
+  <mat-toolbar color="primary" class="main-header mat-elevation-z4" [class.hidden]="toggleSearch">
+    <mat-toolbar-row style="padding: 0 5px;" data-cy="pxb-toolbar">
+      <button aria-label="Toggle sidenav" mat-icon-button (click)="onMenuClicked()" style="margin-left:-4px; margin-right: 12px">
+        <mat-icon data-cy="menu">menu</mat-icon>
+      </button>
+      <div style="padding-left:10px; flex:1;">
+        <div class="mat-title" style="margin-bottom:2px;">{{title}}</div>
+        <div class="mat-subheading-2" style="line-height:.6rem;">Select one to check the status.</div>
+      </div>
+
+      <button mat-icon-button (click)="openSearch()" data-cy="search">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-toolbar-row>
   </mat-toolbar>
-<p>npm-packages works!</p>
+
+  <mat-toolbar class="search-block mat-elevation-z4" [class.active]="toggleSearch" data-cy="search-block">
+    <mat-toolbar-row style="padding: 0 5px;">
+      <button class="search-icon" mat-icon-button disabled>
+        <mat-icon>search</mat-icon>
+      </button>
+      <input class="search-control" type="text" placeholder="Search" [(ngModel)]="searchText" #searchbar>
+      <button mat-button mat-icon-button (click)="searchClose()" data-cy="close-search">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-nav-list class="search-result">
+    <mat-list-item *ngFor="let item of list | filter: searchText" [ngClass]="{'selected': isSelected(item)}" (click)="onSelected(item)">
+      <div mat-line>{{item.Repository}}</div>
+      <mat-icon>navigate_next</mat-icon>
+    </mat-list-item>
+    <mat-list-item *ngIf="(list | filter: searchText).length === 0">
+      <mat-icon mat-list-avatar>error</mat-icon>
+      <div mat-line>0 results</div>
+      <div mat-line>No matching presidents</div>
+    </mat-list-item>
+  </mat-nav-list>
+</div>
