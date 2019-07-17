@@ -17,9 +17,9 @@ export class NpmPackageDetailsComponent implements OnInit {
     private route: ActivatedRoute
   ) {
     this.route.queryParams.subscribe(params => {
-      console.log(params["item"]);
       this.title = params["title"];
-      this.item = params["item"];
+      this.item = JSON.parse(params["item"]);
+      console.log(this.item);
   });
   }
 

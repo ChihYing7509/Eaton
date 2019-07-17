@@ -3,7 +3,7 @@
 }
 
 .flex-container {
-    margin: 30px 0px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: column;
   } 
@@ -28,9 +28,16 @@
 }
 
 .mat-tab-label{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bolder;
     color: #007bc1 !important;
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
+    .mat-tab-label {
+        font-size: 20px;
+        padding: 0px 10px !important;
+    }
 }
 
 @media (max-width: 375px) {
@@ -39,7 +46,6 @@
         padding: 0px 10px !important;
     }
 }
-
 .pxb-blue .mat-tab-group.mat-warn .mat-ink-bar {
     background-color: #007bc1;
 }
