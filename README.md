@@ -26,15 +26,15 @@ The Power Xpert Blue documentation site (pxblue.github.io) includes information 
 We would like you to design a better way to present the information on this resources page and build it using the PX Blue platform.
 ## 2. User Interface:
 
-1. Home / Overview
+1. [Home / Overview](https://ibb.co/9WddXwX)
 
-2. Side Navigation
+2. [Side Navigation](https://ibb.co/qs2ppBH)
 
-3. List of Materials
+3. [List of Materials](https://ibb.co/fpr3p7s)
 
-4. Search a Material
+4. [Search a Material](https://ibb.co/9p4yVw9)
 
-5. Details of a Material
+5. [Details of a Material](https://ibb.co/XV7mLxn)
 
 
 ## 3. Milestones:
