@@ -49,7 +49,7 @@ Since the list may be getting longer, I put a search bar on the top to filter sp
 The detail page displays all the information about the material. For developer users, the repository links and NPM links are mostly what they are looking for, so I use ``` mat-card ``` to present them directly and use ``` mat-tab-group ``` to show the rest of information.
 
 
-## 3. Milestones:
+## 3. Time frame:
 
 Read document and examples   2 hours
 
