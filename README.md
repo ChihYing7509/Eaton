@@ -23,13 +23,29 @@ yarn start
 
 The Power Xpert Blue documentation site (pxblue.github.io) includes information about PX Blue and how to use it to build applications. This includes a resources page (pxblue.github.io/resources), which lists all of the materials that are available as part of PX Blue, including various NPM packages and code examples.
 
+We would like you to design a better way to present the information on this resources page and build it using the PX Blue platform.
 ## 2. User Interface:
 
+1. Home / Overview
+
+2. Side Navigation
+
+3. List of Materials
+
+4. Search a Material
+
+5. Details of a Material
 
 
 ## 3. Milestones:
 
+
+
 ## 4. Technology Stack:
+
+1. JavaScript ES6
+2. Angular (7.3.9)
+3. Bootstrap
 
 ## 5. Referance 
 1. pxblue Side Navigation
