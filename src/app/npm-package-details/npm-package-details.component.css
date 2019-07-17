@@ -2,17 +2,48 @@
     margin: 30px 20px;
 }
 
-.mat-tab-label{
-    font-size: 18px;
-    font-weight: bolder;
+.flex-container {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+  } 
+  
+.flex-container a{
+    margin: 10px 0px;
+  }  
+
+.details-container h1, h2{
+    color: #007bc1;
 }
-@media screen and (max-width: 414px) {
-    .mat-tab-label{
+
+.details-container .repository-link {
+    font-size: 22px;
+    font-weight: 600;
+    color: #007bc1;
+}
+
+.mat-card {
+    margin: 30px 0px; 
+    padding: 20px !important;
+}
+
+.mat-tab-label{
+    font-size: 22px;
+    font-weight: bolder;
+    color: #007bc1 !important;
+}
+
+@media (max-width: 375px) {
+    .mat-tab-label {
         font-size: 16px;
+        padding: 0px 10px !important;
     }
 }
 
-
 .pxb-blue .mat-tab-group.mat-warn .mat-ink-bar {
     background-color: #007bc1;
+}
+
+.pxb-blue .mat-tab-group .mat-tab-header {
+    background-color: white;
 }

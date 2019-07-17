@@ -28,17 +28,22 @@
 }
 
 .mat-tab-label{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bolder;
     color: #007bc1 !important;
 }
-@media screen and (max-width: 414px) {
-    .mat-tab-label{
+
+@media (max-width: 375px) {
+    .mat-tab-label {
         font-size: 16px;
+        padding: 0px 10px !important;
     }
 }
 
-
 .pxb-blue .mat-tab-group.mat-warn .mat-ink-bar {
     background-color: #007bc1;
+}
+
+.pxb-blue .mat-tab-group .mat-tab-header {
+    background-color: white;
 }
