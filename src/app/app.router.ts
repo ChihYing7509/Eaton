@@ -26,7 +26,7 @@ export const routes: Routes = [
   {
     path: 'DesignPatterns',
     component: DesignPatternsComponent,
-    data: {title: 'Design Patterns / Examples'}
+    data: {title: 'Design Patterns'}
   },
   {
     path: 'DesignPatternDetail',
